@@ -87,28 +87,13 @@ video {
     vertical-align: baseline;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
+
 
 body {
     line-height: 1;
 }
 
-ol,
-ul {
-    list-style: none;
-}
+
 
 blockquote,
 q {
@@ -123,27 +108,32 @@ q:after {
     content: none;
 }
 
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+/* reset css */
 
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.mainProfileImg {
-    width: 80%;
+ol,
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 @font-face {
@@ -174,7 +164,26 @@ main {
     font-style: normal;
 }
 
-
 body {
     font-family: 'GmarketSans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.mainProfileImg {
+    width: 50%;
+}
+
+.aboutMeContainer {
+    width: 800px;
 }
