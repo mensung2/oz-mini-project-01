@@ -3,41 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RICESUNG</title>
+    <title>RICEMONKEY</title>
     <link rel="stylesheet" href="infoStyle.css" />
   </head>
   <body>
     <header>
       <nav>
-        <ul>
-          <li><a>HOME</a></li>
-          <li><a>PORTFOLIO</a></li>
-          <li><a>ABOUT </a></li>
+        <img class="logoImg" src="1022.png" />
+        <ul class="navBar">
+          <li class="navText"><a>HOME</a></li>
+          <li class="navText"><a>PORTFOLIO</a></li>
+          <li class="navText"><a>ABOUT </a></li>
         </ul>
       </nav>
     </header>
     <main>
+      <!-- <h1 class="ricesungText">RICEMONKEY</h1> -->
+      <img class="ricesungText" src="maintext.svg" alt="ricemonkey" />
       <img class="mainProfileImg" src="mainimg.png" />
-      <h1>RICESUNG</h1>
+      <img class="mainBackImg" src="background.png" />
     </main>
-    <section>
-      <h2>PORTFOLIO</h2>
-      <div>
-        <p>Apple</p>
+    <section class="portfolioSection">
+      <h2 class="portfolioText">PORTFOLIO</h2>
+      <div class="portfolioCard">
+        <img src="appletag.png" class="portfolioTag" />
         <a href="https://steamcommunity.com/id/sandago/">
-          <img src="apple.jpg" />
+          <img src="apple.jpg" class="portfolioImg" />
         </a>
       </div>
-      <div>
-        <p>Bacon</p>
+      <div class="portfolioCard">
+        <img src="bacontag.png" class="portfolioTag" />
         <a href="https://kgh-which-side.vercel.app/">
-          <img src="bacon.jpg" />
+          <img src="bacon.jpg" class="portfolioImg" />
         </a>
       </div>
-      <div>
-        <p>Cheese</p>
+      <div class="portfolioCard">
+        <img src="cheesetag.png" class="portfolioTag" />
         <a href="https://velog.io/@minseo666/posts">
-          <img src="cheese.jpg" />
+          <img src="cheese.jpg" class="portfolioImg" />
         </a>
       </div>
     </section>
