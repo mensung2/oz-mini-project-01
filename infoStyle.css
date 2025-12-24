@@ -87,7 +87,10 @@ video {
     vertical-align: baseline;
 }
 
-
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 body {
     line-height: 1;
@@ -182,6 +185,10 @@ body {
 header {
     width: 100%;
     background-color: #8A0000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 nav {
@@ -261,7 +268,7 @@ main {
 
 .portfolioSection {
     width: 100%;
-    padding: 2rem;
+    padding: 2.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -285,9 +292,6 @@ main {
 }
 
 
-.aboutMeContainer {
-    width: 800px;
-}
 
 
 .portfolioImg {
@@ -297,4 +301,85 @@ main {
 
 .portfolioTag {
     height: 100%;
+}
+
+.aboutMeSection {
+    width: 100%;
+    display: flex;
+}
+
+.aboutMeContainer {
+    margin: auto;
+    width: 75rem;
+    height: 63rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutMeImg {
+    width: 58rem;
+    height: auto;
+}
+
+.profile-item {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20rem 55rem;
+    grid-template-rows: 4rem 17rem;
+    grid-template-areas:
+        "title ."
+        ".     content";
+}
+
+.profile-text {
+    grid-area: title;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: #8A0000;
+}
+
+.profile-details {
+    grid-area: content;
+    max-width: 100%;
+    min-width: 0;
+    display: block;
+    overflow: hidden;
+    font-size: 1.5rem;
+    line-height: 1.5;
+
+}
+
+.profile-summary {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #8A0000;
+    margin-bottom: 0.5rem;
+}
+
+
+footer {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 2rem;
+
+    background-color: #8A0000;
+}
+
+.copyright {
+    color: #531e1e;
+}
+
+address {
+    color: #EDE5D3;
+}
+
+
+html {
+    scroll-behavior: smooth;
 }
